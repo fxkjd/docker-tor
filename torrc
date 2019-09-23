@@ -1,0 +1,12 @@
+## The directory for keeping all the keys/etc
+DataDirectory /var/lib/tor
+
+## Logs go to stdout at level "notice"
+Log notice stdout
+
+## Tor opens a socks proxy on port 9150
+SocksPort 0.0.0.0:9050
+
+## ControlPort configuration 
+ControlPort 0.0.0.0:9051
+HashedControlPassword 16:D514E28A7C4086E96047100180B318DB0329B84F82D363B905082B24D0 ## "my_password" Change it! 
